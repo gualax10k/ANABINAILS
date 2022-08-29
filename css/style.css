@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(228, 117, 182);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+#menu{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 80px;
+    justify-content: space-between;
+    height: auto;
+}
+#menu .logo{
+    color: white;
+    font-size:60px;
+}
+#menu nav {
+    display: flex;
+    justify-content: flex-end;
+}
+#menu .navegador ul{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 0px;
+    padding-right: 20px;
+    height: auto;
+    margin-top: 0px;
+}
+#menu .navegador ul li{
+    text-decoration: none;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#menu .navegador ul li:hover{
+    background-color: white;
+    color: rgb(228, 117, 182);
+}
+#menu .navegador ul li a:hover{
+    color: rgb(228, 117, 182);
+}
+#menu nav .navegador ul li a{
+    color: white;
+    font-size: 20px;
+}
+#portada {
+    display: flex;
+    background-image: url("../assets/bigstock-205505659-1170x600.jpg");
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    background-position: bottom center;
+    background-size: cover;
+    padding-left: 29%;
+    padding-top: 27%;
+    font-size: 40px;
+    justify-content:space-between;
+}
+#portada p{
+    background-color: white;
+    color:  rgb(153, 15, 218);
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    height: 65px;
+    margin-left: 50px;
+}
+#portada h1{
+    background-color: white;
+    color:  rgb(228, 117, 182);
+    height: 100%;
+    margin-left: 18%;
+    padding-top: 0px;
+    padding-right: 2%;
+    padding-left: 2%;    
+}
+#portadaProductos{
+    display: flex;
+    background-image: url("../assets/bigstock-205505659-1170x600.jpg");
+    height: auto;
+    width: 100%;
+    background-position: bottom center;
+    background-size: cover;
+    padding-left: 41%;
+    padding-top: 27%;
+    font-size: 40px;
+    justify-content:space-between;
+}
+#portadaPromociones{
+    display: flex;
+    background-image: url("../assets/bigstock-205505659-1170x600.jpg");
+    height: auto;
+    width: 100%;
+    background-position: bottom center;
+    background-size: cover;
+    padding-left: 39%;
+    padding-top: 27%;
+    font-size: 40px;
+    justify-content:space-between;
+}
+#portadaPromociones h1{
+    background-color: white;
+    color: rgb(228, 117, 182);
+}
+#portadaProductos .productos{
+    color: rgb(228, 117, 182);
+    background-color: white;
+    height: 100%;
+    margin-left: 0%;
+    padding-top: 0px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.listadoInicio a{
+    color:rgb(228, 117, 182);
+    display: flex;
+    justify-content:space-around;
+    padding-top: 50px;
+    font-size: 50px;
+    background-color: white;
+    margin-top: 50px;
+    padding-top:0px;
+}
+.listadoInicio ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+.listadoInicio ul li p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.listadoInicio ul li a {
+    background-color: rgb(228, 117, 182);
+}
+.listadoServicios {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    grid-template-areas:
+    "imgSemi semi"
+    "imgExtension extension"
+    "imgCapping capping"
+    "imgManicura manicura";
+}
+.listadoServicios .imgSemi {
+    display:flex;
+    justify-content: center;
+    grid-area: imgSemi;
+}
+.listadoServicios .imgExtension {
+    grid-area: imgExtension;
+    display:flex;
+    justify-content: center;
+}
+.listadoServicios .imgCapping {
+    grid-area: imgCapping;
+    display:flex;
+    justify-content: center;
+}
+.listadoServicios .imgManicura {
+    grid-area: imgManicura;
+    display:flex;
+    justify-content: center;
+}
+.listadoServicios .semi {
+    grid-area: semi;
+
+
+}
+.listadoServicios .extension {
+    grid-area: extension;
+    
+}
+.listadoServicios .capping {
+    grid-area: capping;
+    
+}
+.listadoServicios .manicura {
+    grid-area: manicura;
+}
+/*.listadoServicios ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.listadoServicios .descripcion li{
+    height: 100%;
+    margin: 25px;
+    width: 600px;
+    font-size: 20px;
+    text-align:justify;
+}
+*/
+.semi{
+    padding-top: 13%;
+}
+.extension{
+    padding-top: 6%;
+}
+.capping{
+    padding-top: 3%;
+}
+.manicura{
+    padding-top: 12%;
+}
+.promociones ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.promociones ul li{
+    width: 300px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border-style:dashed;
+    border-color: white;
+}
+.promociones ul .amigas{
+    padding-top: 25px;
+}
+.marcas p{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: white;
+    color: rgb(228, 117, 182)
+}
+
+.marcas ul {
+    display: flex;
+    justify-content: center;
+}
+.marcas ul .uno {
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.marcas .ch{
+    padding-top: 15px;
+    margin-left: 25px;
+}
+.marcas .chh{
+    padding-top: 35px;
+}
+
+.textoMarcas {
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+}
+.formulario fieldset{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    border-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+#pieDePagina{
+    background-color: rgba(24, 20, 20, 0.753);
+    display: flex;
+    justify-content: flex-end;
+}
+#pieDePagina .datos {
+    margin-right: 680px;
+}
+#pieDePagina .datos p{
+    margin-left: -20px;
+   }
+#pieDePagina .logo a img{
+    width: 50px;
+    height: 50px;
+    gap: 10px;
+    margin-right: 10px;
+}
+@media (max-width: 768px) {
+    #menu .logo {
+        color: white;
+        font-size: 20px;
+    }
+    #menu nav .navegador ul li a{
+        font-size: 10px;
+    }
+    #portada p {
+        font-size: 20px;
+        display: flex;
+        justify-items: center;
+    }
+    .listadoInicio a{
+        font-size: 40px;
+    }
+    .listadoInicio ul {
+        display: block;
+    }
+    .marcas p{
+        font-size: 20px;
+    }
+    .marcas ul{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:center ;
+    }
+    .marcas ul .uno {
+        justify-content: center;
+        padding-left:0px ;
+    }
+    .marcas ul .tres {
+        justify-content: center;
+        padding-left: 10px;
+    }
+    #pieDePagina {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #pieDePagina .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #pieDePagina .datos {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    #portada h1 {
+        font-size: 40px;
+        margin-left: -10px;
+    }
+    .listadoServicios {
+        display: flex;
+        flex-direction: column;
+    }
+    .listadoServicios li {
+        text-align:center;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    .order1 {
+        order: 1;
+    }
+    .order2 {
+        order: 2;
+    }
+    .order3 {
+        order: 3;
+    }
+    .order4 {
+        order: 4;
+    }
+    .order5 {
+        order: 5;
+    }
+    .order6 {
+        order: 6;
+    }
+    .order7 {
+        order: 7;
+    }
+    .order8 {
+        order: 8;
+    }
+    #portadaProductos {
+        padding-left: 0px;
+        justify-content: center;
+    }
+    #portadaProductos .productos {
+        font-size: 40px;
+    }
+    .listadoInicio a {
+        font-size: 23px;
+    }
+    .marcas ul .chh {
+        padding-left: 70px
+    }
+    .marcas ul .ch {
+        padding-left: 75px;
+        padding-top: 40px;
+    }
+    .marcas ul .chhh {
+        padding-left: 50px;
+    }
+    #portadaPromociones {
+        padding-left: 0px;
+        justify-content: center;
+    }
+    #portadaPromociones .promocioness {
+        font-size: 40px;
+    }
+    .promociones ul li {
+        font-size: 30px;
+    }
+
+}
