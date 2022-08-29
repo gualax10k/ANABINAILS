@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 body{
-    background-color: rgb(228, 117, 182);
+    background:linear-gradient(rgb(228, 117, 182),rgb(173, 45, 199),rgb(228, 117, 182),rgb(228, 117, 182));
     font-family: 'Poppins', sans-serif;
     color: white;
 }
